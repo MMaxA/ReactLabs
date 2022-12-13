@@ -1,12 +1,11 @@
-import Todo from "./components/Todo";
+import React from "react";
 
 function App() {
   return (
     <div>
       <h1>My Todos</h1>
-      <Todo />
-      <Todo />
-      <Todo />
+      <input className="inputField" type="text" placeholder="Введите что-нибудь"></input>
+      <button className="btn">Добавить</button>
     </div>
   );
 }

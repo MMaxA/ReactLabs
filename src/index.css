@@ -22,6 +22,14 @@
     border: 1px solid #800040;
     margin: 0 1rem;
   }
+
+  .inputField {
+    font: inherit;
+    width: 15rem;
+    height: 35px;
+    border-color: #9c1458;
+    border-radius: 4px;
+  }
   
   .btn:hover {
     background-color: #9c1458;
