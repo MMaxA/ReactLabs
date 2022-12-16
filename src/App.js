@@ -1,11 +1,22 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import AllEvents from "./pages/AllEvents.js";
+import NewEvent from "./pages/NewEvent.js";
+import FavoritesEvents from "./pages/FavoritesEvents.js";
+import MainNav from "./components/layout/MainNav.js";
 
 function App() {
   return (
     <div>
-      <h1>My Todos</h1>
-      <input className="inputField" type="text" placeholder="Введите что-нибудь"></input>
-      <button className="btn">Добавить</button>
+      <MainNav/>
+      <Routes>
+        <Route path="/" element={<AllEvents/>}>
+        </Route>
+        <Route path="/new-event" element={<NewEvent/>}>
+        </Route>
+        <Route path="/favorites" element={<FavoritesEvents/>}>
+        </Route>
+      </Routes>
     </div>
   );
 }
